@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
 
   s.name = "AlamofireObjectMapper"
-  s.version = "4.0.0-beta"
+  s.version = "4.0.0-xcode-gm"
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.summary = "An extension to Alamofire which automatically converts JSON response data into swift objects using ObjectMapper"
-  s.homepage = "https://github.com/tristanhimmelman/AlamofireObjectMapper"
+  s.homepage = "https://github.com/Yamm-Software/AlamofireObjectMapper"
   s.author = { "Tristan Himmelman" => "tristanhimmelman@gmail.com" }
-  s.source = { :git => 'https://github.com/tristanhimmelman/AlamofireObjectMapper.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/Yamm-Software/AlamofireObjectMapper.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.11'
@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = 'true'
   s.source_files = 'AlamofireObjectMapper/**/*.swift'
-  s.dependency 'Alamofire', '~> 4.0-beta'
-  s.dependency 'ObjectMapper', '~> 1.0'
+  s.dependency 'Alamofire', :git => 'https://github.com/Yamm-Software/Alamofire.git, '~> 4.0.0-xcode-gm'
+  s.dependency 'ObjectMapper', :git => 'https://github.com/Yamm-Software/ObjectMapper', '~> 1.5-xcode-gm'
 end
